@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^6.1.0
+  quickalert: ^1.0.2
   syncfusion_flutter_pdf: ^23.1.44
 
 dev_dependencies:
