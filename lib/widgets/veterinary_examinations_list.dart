@@ -16,7 +16,7 @@ class VeterinaryExaminationsList extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Lista de exames com diferença de valores: ',
+            'Parâmetros: ',
             style: GoogleFonts.roboto(
               fontSize: 20,
               color: Colors.grey[600],
@@ -44,6 +44,13 @@ class VeterinaryExaminationsList extends StatelessWidget {
                     color: Colors.grey[800],
                   ),
                 ),
+                if (exams[index].iconData != null)
+                  Icon(
+                    exams[index].iconData,
+                    color: exams[index].iconData == Icons.arrow_upward
+                        ? Colors.green
+                        : Colors.red,
+                  ),
               ],
             ),
             itemCount: exams.length,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class DefaultButton extends StatelessWidget {
   final String label;
@@ -35,6 +36,7 @@ class DefaultButton extends StatelessWidget {
               ),
         label: Text(
           label,
+          style: GoogleFonts.roboto(color: Colors.white, fontSize: 16),
         ),
       ),
     );

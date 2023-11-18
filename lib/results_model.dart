@@ -1,8 +1,15 @@
+import 'package:flutter/material.dart';
+
 class ResultsModel {
   String nomeExame;
   double valor;
+  IconData? iconData;
 
-  ResultsModel(this.nomeExame, this.valor);
+  ResultsModel(
+    this.nomeExame,
+    this.valor, {
+    this.iconData,
+  });
 
   static final List<RegExp> getValues = [
     RegExp(r'Hemcias\s+(\d+\s*[,\.]?\s*\d*)\s*milhes'),
