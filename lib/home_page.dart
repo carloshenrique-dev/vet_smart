@@ -297,7 +297,7 @@ class _HomePageState extends State<HomePage> {
                                 double.parse(
                                   diferencaAbs.toStringAsFixed(2),
                                 ),
-                                iconData: Icons.arrow_upward,
+                                iconData: Icons.arrow_downward,
                               ),
                             );
                           } else if (diferenca < 0) {
@@ -307,7 +307,7 @@ class _HomePageState extends State<HomePage> {
                                 double.parse(
                                   diferencaAbs.toStringAsFixed(2),
                                 ),
-                                iconData: Icons.arrow_downward,
+                                iconData: Icons.arrow_upward,
                               ),
                             );
                           }
